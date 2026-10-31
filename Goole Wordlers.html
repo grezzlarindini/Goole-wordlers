@@ -701,7 +701,8 @@ const K={Sa:"Sarah Boville",Gr:"Grez McBoville",Mi:"Gaz Mitch",St:"Steve Acaster
 [1955,"Gr","Gr XXXXY/XGXXX/XGGXG/GGGGG","Mi XXXXY/XXGXX/XXGYX/GGGGG","Ra XXXXX/YXXXG/XGXXG/XGXXG/GGGGG","Je XXXXY/XXXXX/XGGXX/GGGGG","Li XXXXY/XXXXG/YXGXG/XGGGG/GGGGG","St XXXXX/XXXYX/XXGXX/GGGGG","Ka XXXXY/XXGXY/XYGYX/GXGYY/GGGGG","Mu XXXXX/XXXYX/XXGXY/GGGGG","Da XXXXY/XXGYX/XGGXX/XGGXG/XGGXG/GGGGG","Sa XXXYX/XXXXY/XXGXY/GGGGG"],
 [1956,"Gr","Gr XXYXX/XXXYX/YXYYX/GGGGG","Je XXYXX/XYXYX/XGXYY/GGGGG","Mi YYYXX/YYYYX/XGGGG/GGGGG","St YXXXX/XGYXX/XGGYX/GGGGG","Ka XXXYX/XXYYX/YGXXX/XGXXY/XGGGG/GGGGG","Li XXXYX/XYYXX/GGXYY/GGGGG","Ra XXXYG/XYXXX/XGXYX/GGGGG","Da XYXXX/GXYYY/GGGGG","Mu XXYXX/XYYYX/XGGYX/GGGGG","Sa XXYXX/XGXXX/XGXXX/GGGGG"],
 [1957,"Gr","Gr YXGYX/XGGGG/GGGGG","Li YXXYX/XXGXX/XXGGG/GGGGG","Mi XXGGX/XGGGX/XGGGX/XGGGG/XGGGG/GGGGG","St XXXGX/XXGGX/XGGGG/GGGGG","Ka XGGXX/XGGGG/GGGGG","Ra XXXYX/XXYYX/XGGGG/GGGGG","Je YXGGX/XGGGX/XGGGG/XGGGG/GGGGG","Da XXXGX/XGXGX/XGGGG/XGGGG/GGGGG","Sa XGGXX/XGGXX/YGGYX/GGGYY/GGGGG","Mu XXXXX/YYYXX/YXGYG/XGGGG/XGGGG/GGGGG"],
-[1958,"Gr","St XXYXY/GGGXX/GGGGG","Mi XGXXX/YGXXX/XGGXX/GGGGG","Ka XXYXY/YGXXX/GGGGG","Mu XXYXX/GXGYY/GGGGG","Gr XXXYX/YXYGX/GGGGG","Li XXXYX/XGXXX/YGYXX/YGXGY/GGGGG","Je YXXXX/XYYXX/XGYXX/GGGGG","Ra XXXXY/XXGYX/YGGXX/XGGXG/GGGGG","Da XXXXX/XGXXY/XGGXX/GGGGG","Sa XYXXX/YGXXX/XGYXX/GGGGG"]
+[1958,"Gr","St XXYXY/GGGXX/GGGGG","Mi XGXXX/YGXXX/XGGXX/GGGGG","Ka XXYXY/YGXXX/GGGGG","Mu XXYXX/GXGYY/GGGGG","Gr XXXYX/YXYGX/GGGGG","Li XXXYX/XGXXX/YGYXX/YGXGY/GGGGG","Je YXXXX/XYYXX/XGYXX/GGGGG","Ra XXXXY/XXGYX/YGGXX/XGGXG/GGGGG","Da XXXXX/XGXXY/XGGXX/GGGGG","Sa XYXXX/YGXXX/XGYXX/GGGGG"],
+[1959,"Gr","Da XXXYG/GXXGG/GGGGG","Mi XXGYG/GXGXG/GGGXG/GGGGG","Ka XXYYX/XXGYY/GGGGG","St XYYYG/GGGGG","Gr GXGXG/GGGGG","Ra XXYYX/YXXXX/XGGYY/XGGGG/GGGGG","Li GXXXG/GXGXG/GXGXG/GGGGG","Je XXGYG/GGGXG/GGGGG","Mu XGXXY/XGGGG/GGGGG","Sa XXGYY/GXGYG/GGGXG/GGGGG"]
 ].forEach(a=>{const r={};a.slice(2).forEach(s=>{const q=s.split(" ");r[K[q[0]]]=q[1]});D.push({n:a[0],d:add("2026-10-12",a[0]-1941),h:a[1]?a[1].split(",").map(c=>K[c]):[],r})});
 const pc=(a,b)=>b?Math.round(a/b*100):0;
 const sel=(keys,cur,lab)=>'<select onchange="S[view]=this.value;go()">'+keys.map(k=>'<option value="'+k+'"'+(k==cur?" selected":"")+'>'+lab(k)+'</option>').join("")+'</select>';
@@ -775,7 +776,7 @@ const row=(a,b)=>'<div style="display:flex;justify-content:space-between;font-si
 const sq=(c,t)=>'<span><i style="display:inline-block;width:10px;height:10px;border-radius:2px;background:'+c+';margin-right:4px;box-shadow:inset 0 0 0 1px rgba(128,128,128,.5)"></i>'+t+'</span>';
 return ''+
 
-'<p class="note" style="margin:0 0 2px;font-size:11px">Page last updated: 29 Oct 2026 · scores up to Wordle #1958 (Thu 29 Oct)</p><p class="note" style="margin:0 0 6px;font-size:11px">Small print: scores run from 1 Jan 2024. No scores were recorded from 16 Jul 2025 to 26 Jul 2026, so that period is not counted anywhere on this page.</p>'+
+'<p class="note" style="margin:0 0 2px;font-size:11px">Page last updated: 31 Oct 2026 · scores up to Wordle #1959 (Fri 30 Oct)</p><p class="note" style="margin:0 0 6px;font-size:11px">Small print: scores run from 1 Jan 2024. No scores were recorded from 16 Jul 2025 to 26 Jul 2026, so that period is not counted anywhere on this page.</p>'+
 '<h2>The Grand Tally</h2><p class="note">Running total across '+L.length+' days entered, lowest is best. The bars show each player’s mix of tiles.</p><div class="lg" style="margin:0 0 6px;flex-wrap:nowrap;gap:10px">'+sq("#4a9a4a","Green")+sq("#d9a720","Yellow")+sq("#787c7e","Black")+sq("#d03b3b","Fail")+sq("#0d0d0d","Miss")+'</div>'+
 '<div class="r" style="font-size:11px;color:var(--tx2);align-items:flex-end;line-height:1.15"><span class="rk"></span><span class="n"></span><span class="t" style="width:48px;font-weight:400">Running total</span><span class="b" style="background:none;height:auto">% breakdown</span></div>'+
 I.map((r,i)=>{const n=r.n||1,s=(c,v)=>'<i style="width:'+v/n*100+'%;background:'+c+'"></i>';return '<div class="r"><span class="rk">'+md(i)+'</span><span class="n">'+r.p+'</span><span class="t" style="width:48px">'+r.t.toLocaleString("en-GB")+'</span><span class="b" style="display:flex">'+s("#4a9a4a",r.g)+s("#d9a720",r.y)+s("#787c7e",r.x)+s("#d03b3b",r.rd)+s("#0d0d0d",r.mi)+'</span></div>'}).join("")+
@@ -794,46 +795,42 @@ ls.map(p=>'<div class="r" style="border-bottom:1px solid var(--bd);padding:5px 0
 '<h2>The week</h2><p class="note">Tap a day to see its list. A dot means that day has not been entered yet.</p><div class="sw"><table>'+h+'</table></div>'}
 const dd=(YR,yr,MO,mo,WM,w,a,b,c,live)=>{const st=fl=>'margin:0;flex:'+fl+';min-width:0;font-size:13px;padding:7px 5px',o=(v,s,l)=>'<option value="'+v+'"'+(s?" selected":"")+'>'+l+'</option>';return '<div style="display:flex;gap:6px;margin-bottom:12px"><select style="'+st(.8)+'" onchange="'+a+'">'+YR.map(k=>o(k,k==yr,k)).join("")+'</select><select style="'+st(1.1)+'" onchange="'+b+'">'+MO.map(k=>o(k,k==mo,fd(k+"-01",{month:"long"}))).join("")+'</select><select style="'+st(1.4)+'" onchange="'+c+'">'+WM.map(k=>o(k,k==w,fd(k,{day:"numeric",month:"short"})+" \u2013 "+fd(add(k,6),{day:"numeric",month:"short"})+(live(k)?" \u00b7 live":""))).join("")+'</select></div>'};
 function openChart(){
-const G=[];ds().forEach(d=>P.forEach(p=>{const v=d.r[p];if(typeof v!="string")return;const s=sc(v);G.push({n:d.n,p,o:[...v.split("/")[0]].reduce((a,c)=>a+(c=="G"?1:c=="Y"?.7:0),0),s:s<7?s:null})}));
-const C=G.filter(g=>g.s!=null),by={};C.forEach(g=>{(by[g.n]=by[g.n]||[]).push(g)});
-const U=Object.values(by).filter(a=>a.length>=4);let sxy=0,sxx=0;
-U.forEach(a=>{const mo=a.reduce((x,g)=>x+g.o,0)/a.length,ms=a.reduce((x,g)=>x+g.s,0)/a.length;a.forEach(g=>{sxy+=(g.o-mo)*(g.s-ms);sxx+=(g.o-mo)*(g.o-mo)})});
-const b=sxx?sxy/sxx:0,adv={};
-U.forEach(a=>{const k=a.length,so=a.reduce((x,g)=>x+g.o,0),ss=a.reduce((x,g)=>x+g.s,0);a.forEach(g=>{const e=(ss-g.s)/(k-1)+b*(g.o-(so-g.o)/(k-1));(adv[g.p]=adv[g.p]||[]).push(e-g.s)})});
-const av=a=>a.reduce((x,y)=>x+y,0)/(a.length||1);
-const R=P.map(p=>{const mine=G.filter(g=>g.p==p);return{p,ao:av(mine.map(g=>g.o)),as:av(mine.filter(g=>g.s!=null).map(g=>g.s)),ca:av(adv[p]||[])}});
-window.__oc={R,b,games:G.length,solved:C.length};
-const bo=R.reduce((a,r)=>r.ao>a.ao?r:a),bc=R.reduce((a,r)=>r.ca>a.ca?r:a);
-const W=340,H=330,L=46,Rt=14,T=16,B=46,xs=R.map(r=>r.ao),ys=R.map(r=>r.as);
-const x0=Math.min(...xs),x1=Math.max(...xs),y0=Math.min(...ys),y1=Math.max(...ys),px=(x1-x0)*.14||.1,py=(y1-y0)*.14||.1,X0=x0-px,X1=x1+px,Y0=y0-py,Y1=y1+py;
-const fx=v=>L+(v-X0)/(X1-X0)*(W-L-Rt),fy=v=>T+(v-Y0)/(Y1-Y0)*(H-T-B),tk=(a,c,n)=>Array.from({length:n},(_,i)=>a+(c-a)*i/(n-1));
-let s='<svg viewBox="0 0 '+W+' '+H+'" width="100%" role="img" aria-label="Scatter plot of average opening score against average solve score for each player" style="display:block;max-width:100%;height:auto;font-family:inherit">';
+const TH=1.7,G=[];ds().forEach(d=>P.forEach(p=>{const v=d.r[p];if(typeof v!="string")return;G.push({p,o:[...v.split("/")[0]].reduce((a,c)=>a+(c=="G"?1:c=="Y"?.7:0),0),s:sc(v)})}));
+const av=a=>a.reduce((x,y)=>x+y,0)/(a.length||1),strong=g=>g.o>=TH-1e-9;
+const R=P.map(p=>{const m=G.filter(g=>g.p==p),st=m.filter(strong);return{p,ao:av(m.map(g=>g.o)),as:av(m.filter(g=>g.s<7).map(g=>g.s)),fr:st.filter(g=>g.s<=4).length/(st.length||1),ns:st.length}});
+const ST=G.filter(strong),gAo=av(G.map(g=>g.o)),gFr=ST.filter(g=>g.s<=4).length/(ST.length||1);
+window.__oc={R,gAo,gFr,games:G.length};
+const bo=R.reduce((a,r)=>r.ao>a.ao?r:a),bc=R.reduce((a,r)=>r.fr>a.fr?r:a);
+const W=340,H=330,L=46,Rt=14,T=16,B=46,xs=R.map(r=>r.ao),ys=R.map(r=>r.fr);
+const x0=Math.min(...xs),x1=Math.max(...xs),y0=Math.min(...ys),y1=Math.max(...ys),px=(x1-x0)*.14||.1,py=(y1-y0)*.14||.05,X0=x0-px,X1=x1+px,Y0=y0-py,Y1=y1+py;
+const fx=v=>L+(v-X0)/(X1-X0)*(W-L-Rt),fy=v=>T+(Y1-v)/(Y1-Y0)*(H-T-B),tk=(a,c,n)=>Array.from({length:n},(_,i)=>a+(c-a)*i/(n-1));
+let s='<svg viewBox="0 0 '+W+' '+H+'" width="100%" role="img" aria-label="Scatter plot of average opening score against the share of strong openings finished in four guesses or fewer, for each player" style="display:block;max-width:100%;height:auto;font-family:inherit">';
 tk(X0+px*.4,X1-px*.4,5).forEach(v=>{s+='<line x1="'+fx(v)+'" x2="'+fx(v)+'" y1="'+T+'" y2="'+(H-B)+'" style="stroke:var(--bd)" stroke-width="1"/><text x="'+fx(v)+'" y="'+(H-B+14)+'" text-anchor="middle" font-size="10" style="fill:var(--tx2)">'+v.toFixed(2)+'</text>'});
-tk(Y0+py*.4,Y1-py*.4,5).forEach(v=>{s+='<line x1="'+L+'" x2="'+(W-Rt)+'" y1="'+fy(v)+'" y2="'+fy(v)+'" style="stroke:var(--bd)" stroke-width="1"/><text x="'+(L-6)+'" y="'+(fy(v)+3)+'" text-anchor="end" font-size="10" style="fill:var(--tx2)">'+v.toFixed(2)+'</text>'});
+for(let v=Math.ceil(Y0*20)/20;v<=Y1+1e-9;v+=.05){s+='<line x1="'+L+'" x2="'+(W-Rt)+'" y1="'+fy(v)+'" y2="'+fy(v)+'" style="stroke:var(--bd)" stroke-width="1"/><text x="'+(L-6)+'" y="'+(fy(v)+3)+'" text-anchor="end" font-size="10" style="fill:var(--tx2)">'+Math.round(v*100)+'%</text>'}
+s+='<line x1="'+fx(gAo)+'" x2="'+fx(gAo)+'" y1="'+T+'" y2="'+(H-B)+'" style="stroke:var(--tx2)" stroke-width="1" stroke-dasharray="4 3"/><line x1="'+L+'" x2="'+(W-Rt)+'" y1="'+fy(gFr)+'" y2="'+fy(gFr)+'" style="stroke:var(--tx2)" stroke-width="1" stroke-dasharray="4 3"/>';
 s+='<text x="'+(L+(W-L-Rt)/2)+'" y="'+(H-8)+'" text-anchor="middle" font-size="11" style="fill:var(--tx)">Average opening score (higher is better \u2192)</text>';
-s+='<text transform="translate(11 '+(T+(H-T-B)/2)+') rotate(-90)" text-anchor="middle" font-size="11" style="fill:var(--tx)">Average solve score (fewer guesses is higher)</text>';
+s+='<text transform="translate(11 '+(T+(H-T-B)/2)+') rotate(-90)" text-anchor="middle" font-size="11" style="fill:var(--tx)">Solved in 4 or fewer after a strong start</text>';
 s+='<text x="'+(W-Rt-2)+'" y="'+(T+10)+'" text-anchor="end" font-size="10" style="fill:var(--tx2)">Better \u2197</text>';
-const nm=p=>/^Liz/.test(p)?p:p.split(" ")[0],pts=R.map(q=>({r:q,x:fx(q.ao),y:fy(q.as)})),dots=pts.map(q=>({x:q.x-6,y:q.y-6,w:12,h:12,q})),placed=[];
+const nm=p=>/^Liz/.test(p)?p:p.split(" ")[0],pts=R.map(q=>({r:q,x:fx(q.ao),y:fy(q.fr)})),dots=pts.map(q=>({x:q.x-6,y:q.y-6,w:12,h:12,q})),placed=[];
 const ov=(a,c)=>Math.max(0,Math.min(a.x+a.w,c.x+c.w)-Math.max(a.x,c.x))*Math.max(0,Math.min(a.y+a.h,c.y+c.h)-Math.max(a.y,c.y));
 const order=pts.slice().sort((a,c)=>((c.r==bo)+(c.r==bc))-((a.r==bo)+(a.r==bc))),labs=[];
 order.forEach(q=>{const lines=[nm(q.r.p)];if(q.r==bo)lines.push("Best Opening");if(q.r==bc)lines.push("Best Converter");const w=Math.max(...lines.map(t=>t.length))*5.3+2,h=lines.length*11+1,ro=(q.r==bo)+(q.r==bc)>0?13:8;
 const cand=[["start",q.x+ro,q.y-h/2],["end",q.x-ro,q.y-h/2],["middle",q.x,q.y-ro-h+2],["middle",q.x,q.y+ro],["start",q.x+ro,q.y-h],["start",q.x+ro,q.y],["end",q.x-ro,q.y-h],["end",q.x-ro,q.y],["start",q.x-3,q.y-ro-h+2],["end",q.x+3,q.y-ro-h+2],["start",q.x-3,q.y+ro],["end",q.x+3,q.y+ro]];
 let best=null;cand.forEach((k,i)=>{const bx=k[0]=="start"?k[1]:k[0]=="end"?k[1]-w:k[1]-w/2,box={x:bx,y:k[2],w,h};
-let pen=i*.01;placed.forEach(z=>{pen+=ov(z,box)*3});dots.forEach(z=>{if(z.q!==q)pen+=ov(z,box)*3;else pen+=ov(z,box)*3});
-const out=w*h-ov(box,{x:2,y:2,w:W-4,h:H-B-2});pen+=out*10;if(!best||pen<best.pen)best={pen,k,box}});
+let pen=i*.01;placed.forEach(z=>{pen+=ov(z,box)*3});dots.forEach(z=>{pen+=ov(z,box)*3});
+pen+=(w*h-ov(box,{x:2,y:2,w:W-4,h:H-B-2}))*10;if(!best||pen<best.pen)best={pen,k,box}});
 placed.push(best.box);labs.push({q,lines,k:{a:best.k[0],x:best.k[1],y:best.k[2]},pen:best.pen})});
 window.__lab=labs.map(l=>({p:l.q.r.p,pen:l.pen}));
 pts.forEach(q=>{const ob=q.r==bo,cb=q.r==bc;if(ob)s+='<circle cx="'+q.x+'" cy="'+q.y+'" r="9" fill="none" stroke="#ee7d2b" stroke-width="2.5"/>';if(cb)s+='<circle cx="'+q.x+'" cy="'+q.y+'" r="'+(ob?12.5:9)+'" fill="none" stroke="#2f9e44" stroke-width="2.5"/>';s+='<circle cx="'+q.x+'" cy="'+q.y+'" r="4.5" fill="#2a78d6"/>'});
 labs.forEach(l=>{l.lines.forEach((t,i)=>{const hl=i>0,col=t=="Best Opening"?"#ee7d2b":t=="Best Converter"?"#2f9e44":"var(--tx)";s+='<text x="'+l.k.x+'" y="'+(l.k.y+9+i*11)+'" text-anchor="'+l.k.a+'" font-size="'+(hl?9:10)+'" font-weight="'+(hl||l.lines.length>1?600:400)+'" style="fill:'+col+'">'+t+'</text>'})});
 s+='</svg>';
-const sg=v=>(v>=0?"+":"\u2212")+Math.abs(v).toFixed(2);
-const tb=(list,tag)=>'<div class="sw" style="margin-top:6px"><table><tr><th>#</th><th style="text-align:left">Player</th><th>Opening</th><th>Solve</th><th>Conv. adv.</th></tr>'+list.map((r,i)=>'<tr><td>'+(i+1)+'</td><td class="l">'+(i==0?'<b>'+r.p+'</b>':r.p)+'</td><td>'+r.ao.toFixed(2)+'</td><td>'+r.as.toFixed(2)+'</td><td>'+sg(r.ca)+'</td></tr>').join("")+'</table></div>';
+const tb=list=>'<div class="sw" style="margin-top:6px"><table><tr><th>#</th><th style="text-align:left">Player</th><th>Opening</th><th>Solve</th><th>Finish \u22644</th></tr>'+list.map((r,i)=>'<tr><td>'+(i+1)+'</td><td class="l">'+(i==0?'<b>'+r.p+'</b>':r.p)+'</td><td>'+r.ao.toFixed(2)+'</td><td>'+r.as.toFixed(2)+'</td><td>'+Math.round(r.fr*100)+'%</td></tr>').join("")+'</table></div>';
 const chip=(c,t,ring)=>'<span><i style="display:inline-block;width:10px;height:10px;border-radius:50%;box-sizing:border-box;margin-right:4px;vertical-align:-1px;'+(ring?'border:2.5px solid '+c:'background:'+c)+'"></i>'+t+'</span>';
-const missed=ds().length*P.length-G.length;
-return '<h2>Opening strength vs solve score</h2><p class="note">Each dot is a player. Further right means a stronger opening guess, and higher up means fewer guesses to solve.</p><div class="lg" style="margin:0 0 4px;gap:12px">'+chip("#2a78d6","Player")+chip("#ee7d2b","Best Opening",1)+chip("#2f9e44","Best Converter",1)+'</div>'+s+
+const poss=ds().length*P.length,ns=R.map(r=>r.ns),lo=R.reduce((a,r)=>r.ns<a.ns?r:a);
+return '<h2>Opening strength vs finishing</h2><p class="note">Each dot is a player. Further right means a stronger first guess, and higher up means they more often finish quickly when they get a strong start.</p><div class="lg" style="margin:0 0 4px;gap:12px">'+chip("#2a78d6","Player")+chip("#ee7d2b","Best Opening",1)+chip("#2f9e44","Best Converter",1)+'</div>'+s+
 '<h3 style="font-size:14px;margin:14px 0 0">Best opening ranking</h3>'+tb(R.slice().sort((a,c)=>c.ao-a.ao))+
-'<h3 style="font-size:14px;margin:14px 0 0">Best converter ranking</h3>'+tb(R.slice().sort((a,c)=>c.ca-a.ca))+
-'<p class="note" style="font-size:11px">Opening score is the first guess scored as green \u00d7 1 + yellow \u00d7 0.7, averaged per player. Solve score is the average number of guesses in solved games only. Conversion advantage (Conv. adv.) is expected guesses minus actual guesses, so higher is better. Expected guesses start from what everyone else needed on the same Wordle and are adjusted for how strong this player\u2019s opening was compared with theirs; on average each extra opening point is worth about '+Math.abs(b).toFixed(2)+' '+(b<0?'fewer':'more')+' guesses. Missed games (score 8) are excluded from both averages and from the conversion analysis ('+missed.toLocaleString("en-GB")+' of '+(ds().length*P.length).toLocaleString("en-GB")+' possible games). Failed games (7) count toward the opening average but not the solve average or conversion. Based on '+G.length.toLocaleString("en-GB")+' games since 1 Jan 2024.</p>'}
+'<h3 style="font-size:14px;margin:14px 0 0">Best converter ranking</h3>'+tb(R.slice().sort((a,c)=>c.fr-a.fr))+
+'<p class="note" style="font-size:11px">Opening score is the first guess scored as green \u00d7 1 + yellow \u00d7 0.7, averaged per player. A strong start is an opening of 1.7 or more, roughly the best quarter of all openings. Finish \u22644 is the share of a player\u2019s strong starts that ended in a solve within 4 guesses, and a failed game counts as not finished. Solve is the average number of guesses in solved games only. Missed games (score 8) are excluded from every figure here ('+(poss-G.length).toLocaleString("en-GB")+' of '+poss.toLocaleString("en-GB")+' possible games). Dashed lines show the group averages. Players have between '+Math.min(...ns)+' and '+Math.max(...ns)+' strong starts, so '+nm(lo.p)+'\u2019s figure rests on the fewest games. Based on '+G.length.toLocaleString("en-GB")+' games since 1 Jan 2024.</p>'}
 
 const tm=(p,DS)=>{let g=0,y=0,x=0,rd=0,mi=0;DS.forEach(d=>{const v=d.r[p];if(typeof v=="string"&&sc(v)<7){const a=tl(v);g+=a[0];y+=a[1];x+=a[2]}else if(typeof v=="string")rd+=30;else mi+=30});return{g,y,x,rd,mi}};
 const sqg=(c,t)=>'<span><i style="display:inline-block;width:10px;height:10px;border-radius:2px;background:'+c+';margin-right:4px;box-shadow:inset 0 0 0 1px rgba(128,128,128,.5)"></i>'+t+'</span>';
